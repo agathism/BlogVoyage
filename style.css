@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@300;400;500;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root{
+    --primary-color: rgb(33, 133, 208); 
+    --primary-color-transparent: rgba(33, 133, 208, 0.5);
+    --secondary-color: rgb(255, 175, 56);
+    --black-transparent: rgba(0, 0, 0, 0.7);
+    --background-color-grey: rgb(240, 240, 240);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Roboto Sans", sans-serif;
+  ul{
+    li{
+        list-style-type: none;
+    }
+  }
+  header{
+    background-image: --primary-color-transparent url(img/header_image.avif);
+  }
+  footer{
+    background-color: black;
+  }
+}
