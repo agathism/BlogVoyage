@@ -18,11 +18,16 @@ body {
       list-style-type: none;
     }
   }
-  button {
+  button{
     background-color: var(--primary-color);
     border: none;
     padding: 10px;
-    color: inherit;
+    color: white;
+    cursor: pointer;
+  }
+  button:hover{
+    color: var(--primary-color);
+    background-color: white;
   }
   header {
     background-image: linear-gradient(
