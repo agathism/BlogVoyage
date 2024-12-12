@@ -178,6 +178,7 @@ body {
       ul.contact {
         width: 30%;
         li {
+          font-family: 'Roboto Sans', sans-serif;
           margin-bottom: 15px;
         }
       }
