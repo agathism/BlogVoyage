@@ -18,14 +18,14 @@ body {
       list-style-type: none;
     }
   }
-  button{
+  button {
     background-color: var(--primary-color);
     border: none;
     padding: 10px;
     color: white;
     cursor: pointer;
   }
-  button:hover{
+  button:hover {
     color: var(--primary-color);
     background-color: white;
   }
@@ -42,7 +42,6 @@ body {
     color: white;
     nav {
       display: flex;
-      flex-direction: row;
       justify-content: space-around;
       align-items: center;
       margin: 0;
@@ -65,17 +64,15 @@ body {
         font-style: italic;
         font-weight: 900;
         font-size: 3em;
-        margin: 0;
       }
     }
   }
   main {
-    div.line{
+    div.line {
       background-color: var(--primary-color);
       padding: 5px;
     }
     section#advantages {
-      padding: 0;
       div.items {
         display: flex;
         flex-wrap: wrap;
@@ -108,7 +105,7 @@ body {
             ),
             url(img/item1.avif);
           background-size: cover;
-          margin: -250px 0;
+          margin: -180px 0;
           padding: 20px;
         }
         div:last-of-type {
@@ -118,7 +115,7 @@ body {
             ),
             url(img/item2.avif);
           background-size: cover;
-          margin: -250px 0;
+          margin: -180px 0;
           padding: 20px;
         }
       }
@@ -149,12 +146,10 @@ body {
           var(--primary-color-transparent)
         ),
         url(img/main_image.avif);
-      background-size: cover;
       background-position: center;
       padding: 70px 0;
       display: flex;
       justify-content: flex-end;
-      align-items: center;
       div.infos {
         width: 35%;
         color: white;
@@ -178,7 +173,7 @@ body {
       ul.contact {
         width: 30%;
         li {
-          font-family: 'Roboto Sans', sans-serif;
+          font-family: "Roboto Sans", sans-serif;
           margin-bottom: 15px;
         }
       }
@@ -187,12 +182,7 @@ body {
 }
 
 @media screen and (min-width: 445px) {
-  body{
-    div.pictures{
-      div{
-        width: 85%;
-      }
-    }
+  body {
     div.infos {
       margin-right: 100px;
     }
