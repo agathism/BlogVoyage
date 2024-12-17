@@ -98,25 +98,32 @@ body {
         justify-content: center;
         align-items: center;
         color: white;
-        div:first-of-type {
-          background-image: linear-gradient(
-              var(--black-transparent),
-              var(--black-transparent)
-            ),
-            url(img/item1.avif);
-          background-size: cover;
-          margin: -180px 0;
-          padding: 20px;
+        @media screen and (max-width: 750px) {
+          flex-direction: column;
         }
-        div:last-of-type {
-          background-image: linear-gradient(
-              var(--primary-color-transparent),
-              var(--primary-color-transparent)
-            ),
-            url(img/item2.avif);
+        div {
           background-size: cover;
-          margin: -180px 0;
-          padding: 20px;
+          width: 25%;
+          margin-top: -30px;
+          padding: 40px;
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+          @media screen and (max-width: 750px) {
+            width: 50%;
+          }
+          &:first-of-type {
+            background-image: linear-gradient(
+                var(--black-transparent),
+                var(--black-transparent)
+              ),
+              url(img/item1.avif);
+          }
+          &:last-of-type {
+            background-image: linear-gradient(
+                var(--primary-color-transparent),
+                var(--primary-color-transparent)
+              ),
+              url(img/item2.avif);
+          }
         }
       }
       hgroup {
@@ -148,11 +155,15 @@ body {
         url(img/main_image.avif);
       background-position: center;
       padding: 70px 0;
-      display: flex;
-      justify-content: flex-end;
       div.infos {
         width: 35%;
         color: white;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        div {
+          padding-right: 15px;
+        }
       }
     }
   }
@@ -167,8 +178,7 @@ body {
     }
     div.end {
       display: flex;
-      justify-content: center;
-      gap: 35px;
+      justify-content: space-around;
       div.infos,
       ul.contact {
         width: 30%;
@@ -177,14 +187,9 @@ body {
           margin-bottom: 15px;
         }
       }
-    }
-  }
-}
-
-@media screen and (min-width: 445px) {
-  body {
-    div.infos {
-      margin-right: 100px;
+      div.infos {
+        margin-left: 150px;
+      }
     }
   }
 }
