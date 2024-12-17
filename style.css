@@ -156,14 +156,11 @@ body {
       background-position: center;
       padding: 70px 0;
       div.infos {
-        width: 35%;
         color: white;
         display: flex;
-        justify-content: flex-end;
         flex-direction: column;
-        div {
-          padding-right: 15px;
-        }
+        justify-content: center;
+        align-items: flex-end;
       }
     }
   }
