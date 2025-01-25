@@ -155,13 +155,17 @@ body {
         url(img/main_image.avif);
       background-position: center;
       padding: 70px 0;
-      display: flex;
-        flex-direction: column;
       div.infos {
         color: white;
-      }
-      h2, div.infos{
-        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
       }
     }
   }
@@ -191,8 +195,8 @@ body {
 
 @media screen and (max-width: 768px) {
   body {
-    footer{
-      div.end{
+    footer {
+      div.end {
         justify-content: center;
       }
       div.contact {
@@ -203,11 +207,14 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  body{
-    main{
-      section#resume{
-        p, h2{
+  body {
+    main {
+      section#resume {
+        h2 {
           width: 35%;
+        }
+        p {
+          width: 45%;
         }
       }
     }
